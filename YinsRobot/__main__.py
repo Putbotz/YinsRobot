@@ -83,7 +83,7 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 *Hello {} !*
-✪ I'm an Yins management bot [✨](https://telegra.ph/file/64f4b1e3ab6d6911447d2.jpg)
+✪ I'm an Put management bot [✨](https://telegra.ph/file/64f4b1e3ab6d6911447d2.jpg)
 ────────────────────────
 × *Uptime:* `{}`
 × `{}` *users, across* `{}` *chats.*
@@ -93,7 +93,7 @@ PM_START_TEXT = """
 
 buttons = [
     [
-        InlineKeyboardButton(text="About Yins Robot", callback_data="yins_"),
+        InlineKeyboardButton(text="About Put Robot", callback_data="yins_"),
     ],
     [
         InlineKeyboardButton(text="Get Help", callback_data="help_back"),
@@ -103,7 +103,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="➗ Add Yins To Your Group ➗", url=f"t.me/{bu}?startgroup=new"),
+            text="➗ Add Put To Your Group ➗", url=f"t.me/putxd_bot?startgroup=new"),
     ],
 ]
 
@@ -113,7 +113,7 @@ Click on the button bellow to get description about specifics command."""
 
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project by contacting @AyiinXd \
+ You can support the project by contacting @putxd \
  Supporting isnt always financial! \
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
@@ -229,7 +229,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_text(
-            f"👋 Hi, Saya {dispatcher.bot.first_name}. Senang bertemu dengan Anda.",
+            f"👋 Hi, Saya Putbotz. Senang bertemu dengan Anda.",
             parse_mode=ParseMode.HTML
        )
 
@@ -360,7 +360,7 @@ def yins_about_callback(update, context):
     query = update.callback_query
     if query.data == "yins_":
         query.message.edit_text(
-            text="๏ I'm *Yins*, a powerful group management bot built to help you manage your group easily."
+            text="๏ I'm *Putbotz*, a powerful group management bot built to help you manage your group easily."
             "\n• I can restrict users."
             "\n• I can greet users with customizable welcome messages and even set a group's rules."
             "\n• I have an advanced anti-flood system."
@@ -374,15 +374,15 @@ def yins_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Admins", callback_data="yins_admin"),
-                    InlineKeyboardButton(text="Notes", callback_data="yins_notes"),
+                    InlineKeyboardButton(text="Admins", callback_data="t.me/putxd"),
+                    InlineKeyboardButton(text="Notes", callback_data="Putbotz ganteng banh"),
                  ],
                  [
-                    InlineKeyboardButton(text="Support", callback_data="yins_support"),
-                    InlineKeyboardButton(text="Credits", callback_data="yins_credit"),
+                    InlineKeyboardButton(text="Support", callback_data="t.me/putxd"),
+                    InlineKeyboardButton(text="Credits", callback_data="t.me/putxd"),
                  ],
                  [
-                    InlineKeyboardButton(text="Source Code", url="https://github.com/AyiinXd/YinsRobot"),
+                    InlineKeyboardButton(text="Source Code", url="https://github.com/Putbotz"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="yins_back"),
@@ -408,7 +408,7 @@ def yins_about_callback(update, context):
     elif query.data == "yins_admin":
         query.message.edit_text(
             text=f"*๏ Let's make your group bit effective now*"
-            "\nCongragulations, YinsRobot now ready to manage your group."
+            "\nCongragulations, PutRobot now ready to manage your group."
             "\n\n*Admin Tools*"
             "\nBasic Admin tools help you to protect and powerup your group."
             "\nYou can ban members, Kick members, Promote someone as admin through commands of bot."
