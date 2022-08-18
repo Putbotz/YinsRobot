@@ -13,13 +13,13 @@ PHOTO = "https://telegra.ph/file/64f4b1e3ab6d6911447d2.jpg"
 
 @register(pattern=("/alive"))
 async def awake(event):
-  TEXT = f"**Hi [{event.sender.first_name}](tg://user?id={event.sender.id}), I'm Yins Robot.** \n\n"
+  TEXT = f"**Hi [{event.sender.first_name}](tg://user?id={event.sender.id}), I'm 𝕻𝖚𝖙 𝕯𝖊𝖛 Robot.** \n\n"
   TEXT += "✨ **I'm Working Properly** \n\n"
   TEXT += f"✨ **Oᴡɴᴇʀ : [AʏɪɪɴXᴅ](https://t.me/AyiinXd)** \n\n"
   TEXT += f"✨ **Lɪʙʀᴀʀʏ Vᴇʀsɪᴏɴ    :** `{telever}` \n\n"
   TEXT += f"✨ **Tᴇʟᴇᴛʜᴏɴ Vᴇʀsɪᴏɴ   :** `{tlhver}` \n\n"
   TEXT += f"✨ **Pʏʀᴏɢʀᴀᴍ Vᴇʀsɪᴏɴ :** `{pyrover}` \n\n"
-  TEXT += f"✨ **YɪɴᴢRᴏʙᴏᴛ Vᴇʀsɪᴏɴ :** `{yinzver}` \n\n"
+  TEXT += f"✨ **𝕻𝖚𝖙 Vᴇʀsɪᴏɴ :** `{yinzver}` \n\n"
   TEXT += "**Thanks For Adding Me Here ✨**"
-  BUTTON = [[Button.url("Help", "https://t.me/YinzRobot?start=help"), Button.url("Support", "https://t.me/AyiinXdSupport")]]
+  BUTTON = [[Button.url("Help", "https://t.me/putxd_bot?start=help"), Button.url("Support", "https://t.me/putxd")]]
   await tbot.send_file(event.chat_id, PHOTO, caption=TEXT,  buttons=BUTTON)
